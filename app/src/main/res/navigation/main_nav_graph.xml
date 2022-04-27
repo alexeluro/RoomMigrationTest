@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/studentsListFragment">
+
+    <fragment
+        android:id="@+id/studentsListFragment"
+        android:name="com.inspiredcoda.roommigrationtest.presentation.student_list.StudentsListFragment"
+        android:label="StudentsListFragment"
+        tools:layout="@layout/fragment_students_list" >
+        <action
+            android:id="@+id/action_studentsListFragment_to_addStudentDialog"
+            app:destination="@id/addStudentDialog" />
+    </fragment>
+    <dialog
+        android:id="@+id/addStudentDialog"
+        android:name="com.inspiredcoda.roommigrationtest.presentation.add_student.AddStudentDialog"
+        android:label="AddStudentDialog"
+        tools:layout="@layout/add_student_dialog" />
+
+</navigation>
