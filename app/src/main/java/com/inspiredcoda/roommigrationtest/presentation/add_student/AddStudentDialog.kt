@@ -6,13 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.DialogFragment
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.inspiredcoda.roommigrationtest.data.Repository
 import com.inspiredcoda.roommigrationtest.data.db.MainDb
 import com.inspiredcoda.roommigrationtest.databinding.AddStudentDialogBinding
 import com.inspiredcoda.roommigrationtest.presentation.StudentViewModelBuilder
 import com.inspiredcoda.roommigrationtest.presentation.StudentsViewModel
 
-class AddStudentDialog : DialogFragment() {
+class AddStudentDialog : BottomSheetDialogFragment() {
 
     private var _binding: AddStudentDialogBinding? = null
     private val binding: AddStudentDialogBinding
